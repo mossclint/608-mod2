@@ -15,7 +15,7 @@ else:
 print("Median is: " + str(median))
 
 
-data = collections.len(values)
+data = len(values)
 data_list = dict(data)
 max_value = max(list(data.values()))
 mode_val = [num for num, freq in data_list.items() if freq == max_value]
