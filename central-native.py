@@ -14,16 +14,13 @@ else:
     median = values[xmedian//2]
 print("Median is: " + str(median))
 
-xmode = len(values)
-  
-data = len(values)
-get_mode = dict(data)
-mode = [k for k, v in get_mode.items() if v == max(list(data.values()))]
-  
-if len(mode) == xmode:
-    get_mode = "No mode found"
+
+data = collections.Counter(values)
+data_list = dict(data)
+max_value = max(list(data.values()))
+mode_val = [num for num, freq in data_list.items() if freq == max_value]
+if len(mode_val) == len(num_list):
+   print("No mode in the list")
 else:
-    get_mode = "Mode is / are: " + ', '.join(map(str, mode))
-      
-print(get_mode)
+   print("The Mode of the list is : " + ', '.join(map(str, mode_val)))
 
