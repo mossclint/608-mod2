@@ -14,3 +14,16 @@ else:
     median = values[xmedian//2]
 print("Median is: " + str(median))
 
+xmode = len(values)
+  
+data = Counter(values)
+get_mode = dict(data)
+mode = [k for k, v in get_mode.items() if v == max(list(data.values()))]
+  
+if len(mode) == xmode:
+    get_mode = "No mode found"
+else:
+    get_mode = "Mode is / are: " + ', '.join(map(str, mode))
+      
+print(get_mode)
+
