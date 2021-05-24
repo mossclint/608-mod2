@@ -1,7 +1,7 @@
 values = [47, 95, 88, 73, 88, 84]
 print('Count is', + len(values))
 print('Sum is', + sum(values))
-print(sum(values)/len(values))
+print('Mean is', + sum(values)/len(values))
 
 xmedian = len(values)
 values.sort()
