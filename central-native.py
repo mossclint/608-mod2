@@ -15,5 +15,5 @@ else:
 print("Median is: " + str(median))
 
 mode = max(values, key = values.count)
-Print('Mode is', + mode)
+Print('Mode is', + (mode))
 
