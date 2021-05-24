@@ -15,5 +15,5 @@ else:
 print("Median is: " + str(median))
 
 mode = mex(values, key = values.count)
-Print(Mode is', + mode)
+Print(Mode is', + mode,'\n')
 
