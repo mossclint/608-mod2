@@ -14,6 +14,6 @@ else:
     median = values[xmedian//2]
 print("Median is: " + str(median))
 
-mode = mex(values, key = values.count)
-Print(Mode is', + mode,'\n')
+mode = max(values, key = values.count)
+Print(Mode is', + mode)
 
